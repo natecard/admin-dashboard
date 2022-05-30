@@ -1,0 +1,121 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    --color-sidebar-purple: rgba(92, 81, 219, 1.00);
+    --color-admin-background: rgba(202, 198, 235, 1.00);
+    --color-text-sidebar: rgba(242, 241, 241, 1.00);
+    --color-text-dashboard: rgba(126, 118, 224, 1.00);
+    color: var(--color-text-dashboard);
+    background-color: var(--color-admin-background);
+}
+#container {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 4fr 4fr;
+    background-color: var(--color-admin-background);
+}
+#sidebar {
+    grid-area: 1/1/5/1;
+    display: grid;
+    grid-column: 1fr;
+    grid-row: 1fr 1fr;
+    background-color: var(--color-sidebar-purple);
+    color: var(--color-text-sidebar);
+    padding: 15px 0 0 35px;
+}
+#header {
+    grid-area: 1/2/2/4;
+    display: grid;
+    background-color: var(--color-text-sidebar);
+    gap: 5px;
+    padding: 5px 5px 5px 25px;
+}
+#search-bar {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 10px 0 5px 0;
+}
+.search-right {
+    display: flex;
+    flex: row;
+    justify-content: flex-end;
+    gap: 25px;
+}
+.search-left {
+    display: flex;
+    flex: row;
+    justify-content: flex-start;
+}
+.search {
+    background-color: var(--color-admin-background);
+    border: 1px var(--color-text-sidebar);
+    width: 50vw;
+    height: 2.5vh;
+    border-radius: 5px;
+}
+#intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#projects {
+    grid-area: 3/2/5/3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 25px;
+    margin: 0 20px;
+}
+#projects div {
+    background-color: var(--color-text-sidebar);
+}
+.project-cards {
+    padding: 25px;
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 5%;
+}
+#announcements {
+    grid-area: 3/3/4/4;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+.announcement-card {
+    background-color: var(--color-text-sidebar);
+    padding: 15px;
+    border-radius: 5%;
+}
+#trending {
+    grid-area: 4/3/5/4;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+.trending-card {
+    background-color: var(--color-text-sidebar);
+    padding: 15px;
+    border-radius: 5%;
+}
+button {
+    background-color: var(--color-sidebar-purple);
+    border-radius: 15%;
+    width: 10em;
+    height: 2.5vh;
+}
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+}
+.buttons button{
+    height: 4vh;
+    font-size: 15px;
+}
+#notifications {
+    width: 2em;
+}
+.card-heading {
+    font-size: 25px;
+}
