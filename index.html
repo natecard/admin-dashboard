@@ -19,13 +19,15 @@
                     </div>
                     <div class="search-right">
                         <img src="../admin-dashboard/images/bell-badge.png" id="notifications" alt="notifications">
-                        <button>Profile</button>
-                        <button>User ID</button>
+                        <button class="profile"></button>
                     </div>
                 </div>
                 <div id="intro">
+                    <div class="profile-pic">
+                        <img src="../admin-dashboard/images/moments-jJE854S5z2k-unsplash.jpg" alt="Morgan-Oakley" class="user-id">
+                    </div>        
                     <div class="intro">
-                    <p>Hi There,</p><h3> Morgan Oakley (@morgan)</h3>
+                        <p>Hi There,</p><h3>Morgan Oakley (@morgan)</h3>
                     </div>
                     <div class="buttons">
                         <button>New</button>
@@ -36,18 +38,18 @@
             </div>
             <div id="sidebar">
                 <div class="top-side">
-                    <h1>Dashboard</h1>
-                    <p>Home</p>
-                    <p>Profile</p>
-                    <p>Messages</p>
-                    <p>History</p>
-                    <p>Tasks</p>
-                    <p>Communities</p>
+                    <h1><img src="../admin-dashboard/images/view-dashboard-variant.png" alt=""> Dashboard</h1>
+                    <p><img src="../admin-dashboard/images/home.png" alt=""> Home</p>
+                    <p><img src="../admin-dashboard/images/account-box-outline.png" alt=""> Profile</p>
+                    <p><img src="../admin-dashboard/images/forum.png" alt=""> Messages</p>
+                    <p><img src="../admin-dashboard/images/history.png" alt=""> History</p>
+                    <p><img src="../admin-dashboard/images/calendar-check.png" alt=""> Tasks</p>
+                    <p><img src="../admin-dashboard/images/account-group.png" alt=""> Communities</p>
                 </div>
                 <div class="low-side">
-                    <p>Settings</p>
-                    <p>Support</p>
-                    <p>Privacy</p>
+                    <p><img src="../admin-dashboard/images/cog.png" alt=""> Settings</p>
+                    <p><img src="../admin-dashboard/images/help-circle-outline.png" alt=""> Support</p>
+                    <p><img src="../admin-dashboard/images/security.png" alt=""> Privacy</p>
                 </div>
             </div>
             <div id="projects">
@@ -91,23 +93,28 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
                 </div>
+                <div class="project-cards">
+                    <p class="card-heading">Money Faker</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                </div>
             </div>
 
             <div id="announcements">
                     <p class="card-heading">Announcements</p>
-                    <div class="announcement-card">
+                    <div class="announcement-card" id="announcement-card1">
                         <p>Site Maintenance</p>
                         <p>Vestibulum condimentum tells lacu
                             In accumsan elit maximus ac. Donec
                             hendrerit sodales congue...</p>
                     </div>
-                    <div class="announcement-card">
+                    <div class="announcement-card" id="announcement-card2">
                         <p>Community Share Day</p>
                         <p>Vestibulum condimentum tells lacu
                             In accumsan elit maximus ac. Donec
                             hendrerit sodales congue...</p>
                     </div>
-                    <div class="announcement-card">
+                    <div class="announcement-card" id="announcement-card3">
                         <p>Updated Privacy Policy</p>
                         <p>Vestibulum condimentum tells lacu
                             In accumsan elit maximus ac. Donec
@@ -117,19 +124,31 @@
 
             <div id="trending">
                     <p class="card-heading">Trending</p>
-                        <div class="trending-card">
+                        <div class="trending-pic" id="trending-pic-top">
+                        <img class="profile" src="../admin-dashboard/images/david-clode-L8YtsbtTYE4-unsplash.jpg" alt="profile-pic">
+                        </div>
+                        <div class="trending-card" id="trending-card-top">
                             <p>#WorldHealthDay</p>
                             <p>World Health Day</p>
+                        </div>
+                        <div class="trending-pic">
+                        <img class="profile" src="../admin-dashboard/images/ivan-rudoy-Ossp3HYeMWc-unsplash.jpg" alt="profile-pic">
                         </div>
                         <div class="trending-card">
                             <p>#Bungler</p>
                             <p>Bungle Jungle</p>
                         </div>
+                        <div class="trending-pic">
+                        <img class="profile" src="../admin-dashboard/images/moments-vitYuYRBH0w-unsplash.jpg" alt="profile-pic">
+                        </div>
                         <div class="trending-card">
                             <p>#MayDay</p>
                             <p>Pay Day May Day</p>
                         </div>
-                        <div class="trending-card">
+                        <div class="trending-pic" id="trending-pic-bottom">
+                        <img class="profile" src="../admin-dashboard/images/moments-jJE854S5z2k-unsplash.jpg" alt="profile-pic">
+                        </div>
+                        <div class="trending-card" id="trending-card-bottom">
                             <p>#Functional</p>
                             <p>Functional App</p>
                         </div>
